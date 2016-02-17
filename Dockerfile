@@ -11,4 +11,6 @@ RUN apt-get update && \
 ADD sequence.fasta /root/
 
 WORKDIR /root
-RUN echo 'export PATH="/usr/lib/khmer/bin:$PATH"' | tee -a /root/.bashrc >>/root/.profile
+RUN echo 'export HOME="/root"'>>/etc/bash.bashrc
+RUN echo 'export PATH="/usr/lib/khmer/bin:$PATH"'>>/etc/bash.bashrc
+RUN echo 'cd' >>/etc/bash.bashrc
