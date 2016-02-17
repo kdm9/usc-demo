@@ -7,10 +7,10 @@ This is a demonstration of using `proot <http://proot.me>`_ as a
 fully-userspace containerisation platform. Using proot, it is possible to
 execute workflows in isolated environments on e.g. HPC clusters:
 
-    - as an unprivileged user
-    - without any setuid binaries
-    - fully within $HOME or any other writeable directory
-    - without any admin help or installation
+- as an unprivileged user
+- without any setuid binaries
+- fully within $HOME or any other writeable directory
+- without any admin help or installation
 
 In this repo is a Dockerfile that creates an Debian image within which we can
 install khmer.
@@ -23,9 +23,9 @@ Demo
 
 To run this demo you will need installed on your local computer:
 
-    - ``docker``: get it from docker.io
-    - ``python-docker``: ``pip install docker-py``
-    - ``python-docopt``: ``pip install docopt``
+- ``docker``: get it from `docker.com <https://docker.com>`_
+- ``python-docker``: ``pip install docker-py``
+- ``python-docopt``: ``pip install docopt``
 
 I refer below to ``<YOUR_HPC>`` or your remote machine. This could be any
 computer running a Linux kernel. Your laptop, your local dev box, your HPC
