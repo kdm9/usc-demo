@@ -8,7 +8,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
-ADD sequence.fasta /root/
+ADD sequence.fasta.gz /root/
 
 WORKDIR /root
 RUN echo 'export HOME="/root"'>>/etc/bash.bashrc
